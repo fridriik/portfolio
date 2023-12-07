@@ -1,0 +1,38 @@
+.welcome{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: azure;
+    text-align: center;
+    justify-content: center;
+}
+
+.roles{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem;
+    gap: 5vh;
+}
+
+@media (max-width: 460px) {
+    .roles{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 700px) {
+    .rol-1 {
+        width: 100%;
+    }
+}
+
+@media (max-height: 300px) {
+    .roles{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
