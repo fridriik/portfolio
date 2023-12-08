@@ -12,27 +12,31 @@ const App = () => {
   const [mostrarMensaje, setMostrarMensaje] = useState(true);
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 100) {
+    const handleWheel = (event) => {
+      const deltaY = event.deltaY;
+      console.log('Rueda del mouse utilizada:', deltaY);
+      if (deltaY > 0) {
         setMostrarMensaje(false);
       } else {
         setMostrarMensaje(true);
       }
     };
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('wheel', handleWheel );
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('wheel', handleWheel );
     };
   }, []); //Vacío para que solo se ejecute una vez
 
   return (
     <main>
       {mostrarMensaje && (
+        console.log("Mostrando mensaje de bienvenida"),
         <Welcome/>
       )}
 
       {!mostrarMensaje && (
         <div>
+        {console.log("Muestro el resto")}
           <Navbar />
           <About />
           <Projects />

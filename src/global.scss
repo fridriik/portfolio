@@ -43,3 +43,13 @@
         var(--font-size-3)
     );
 }
+
+.paragraph1 {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    font-size: clamp(
+        var(--font-size-9),
+        0.75vw + 0.5rem,
+        var(--font-size-5)
+    );
+}

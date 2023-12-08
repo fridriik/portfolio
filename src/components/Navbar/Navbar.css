@@ -1,0 +1,7 @@
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    color: azure;
+    position: sticky;
+    padding: 2rem;
+}
