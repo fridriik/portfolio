@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { forwardRef} from "react";
 import './Skills.css'
 
-const Skills = () => {
+const Skills = forwardRef((props, ref) => {
   return (
-    <div className="skills">
+    <div ref={ref} className="skills">
       <h2 className='header2'>SKILLS</h2>
         <div className='skills-divided'>
             <div className='skills-external-container-1'>
@@ -32,7 +32,7 @@ const Skills = () => {
             </div>
         </div>
     </div>
-  );
-};
+    );
+});
 
 export default Skills;

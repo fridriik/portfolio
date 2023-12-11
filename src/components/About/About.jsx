@@ -1,14 +1,10 @@
-import React, { useRef, useEffect }from 'react';
+import React, { forwardRef } from "react";
 import './About.css';
 
-const About = () => {
-  const aboutRef = useRef(null);
-
-  useEffect(() => {
-    console.log(aboutRef.current);
-  }, []);
+const About = forwardRef((props, ref) => {
+  
   return (
-    <div ref={aboutRef} className='about'>
+    <div ref={ref} className='about'>
         <h2 className='header2'>ABOUT ME</h2>
         <p className='paragraph1'>
         I’m a system analyst, front-end developer apassionated for design, student of BS
@@ -22,6 +18,6 @@ const About = () => {
         </p>
     </div>
   );
-};
+});
 
 export default About;

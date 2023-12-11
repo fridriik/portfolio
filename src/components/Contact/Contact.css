@@ -1,0 +1,15 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    align-items: center;
+    color: azure;
+    padding: 2.5rem;
+    gap: 4vh;
+}
+
+.leaflet-tile-pane {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }

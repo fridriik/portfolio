@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { forwardRef } from "react";
 import './Welcome.css'
 
-const WelcomeMessage = () => {
+const WelcomeMessage = forwardRef((props, ref) => {
   return (
-    <div className="welcome">
+    <div ref={ref} className="welcome">
       <div>
         <h1 className="header1">FRIDRIIK</h1>
       </div>
@@ -16,6 +16,5 @@ const WelcomeMessage = () => {
       </div>
     </div>
   );
-};
-
+});
 export default WelcomeMessage;

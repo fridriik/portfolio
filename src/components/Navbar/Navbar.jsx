@@ -1,12 +1,7 @@
-import React, { useRef, useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import './Navbar.css';
 
-const Navbar = () => {
-  const aboutRef = useRef(null);
-  const projectsRef = useRef(null);
-  const skillsRef = useRef(null);
-  const contactRef = useRef(null);
-
+const Navbar = ({ welcomeRef, aboutRef, projectsRef, skillsRef, contactRef }) => {
   const [isMenuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -19,12 +14,7 @@ const Navbar = () => {
       ref.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
       setMenuOpen(false);
     }
-  };
-
-  useEffect(() => {
-    console.log('Navbar component mounted:', aboutRef.current);
-  }, []);
-  
+  }; 
 
   return (
     <nav className={`navbar ${isMenuOpen ? 'open' : ''}`}>
@@ -32,9 +22,12 @@ const Navbar = () => {
         ☰
       </button>
       <div className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
-        <button onClick={() => scrollToSection(aboutRef)}>
+        <div onClick={() => scrollToSection(welcomeRef)}>
+          <h3 className="header3">F</h3>
+        </div>
+        <div onClick={() => scrollToSection(aboutRef)}>
           <h3 className="header3">ABOUT ME</h3>
-        </button>
+        </div>
         <div onClick={() => scrollToSection(projectsRef)}>
           <h3 className="header3">PROJECTS</h3>
         </div>

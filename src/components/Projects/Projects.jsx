@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { forwardRef } from "react";
 import './Projects.css'
 
-const Projects = () => {
+const Projects = forwardRef((props, ref) => {
   return (
-    <div className="projects">
+    <div ref={ref} className="projects">
     <h2 className='header2'>PROJECTS</h2>
       <div className='project-external-container'>
         <h3 className="header3">DIMAIA</h3>
@@ -51,6 +51,6 @@ const Projects = () => {
       </div>
     </div>
   );
-};
+});
 
 export default Projects;

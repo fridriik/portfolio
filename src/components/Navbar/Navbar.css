@@ -5,7 +5,7 @@
     position: sticky;
     top: 0;
     background-color: #303030;
-    padding: 2rem;
+    padding: 1rem;
   }
   
   .menu-button {
@@ -22,7 +22,7 @@
     .navbar {
       flex-direction: column;
       align-items: center;
-      padding: 2rem;
+      padding: 1rem;
       gap: 4vh;
     }
   
