@@ -1,0 +1,16 @@
+.projects{
+    display: flex;
+    color: azure;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    gap: 5vh;
+}
+
+.project-external-container{
+    display: flex;
+    text-align: justify;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+}

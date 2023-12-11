@@ -9,10 +9,10 @@ const WelcomeMessage = () => {
       </div>
       <div className="roles">
         <div className="rol-1">
-          <h3 className="header3">SYSTEM ANALYST</h3>
+          <h4 className="header4">SYSTEM ANALYST</h4>
         </div>
-          <h3 className="header3">FRONT-END DEV</h3>
-          <h3 className="header3">UX/UI DESIGNER</h3>
+          <h4 className="header4">FRONT-END DEV</h4>
+          <h4 className="header4">UX/UI DESIGNER</h4>
       </div>
     </div>
   );

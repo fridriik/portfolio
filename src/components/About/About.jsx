@@ -1,12 +1,24 @@
-import React from 'react';
+import React, { useRef, useEffect }from 'react';
 import './About.css';
 
 const About = () => {
+  const aboutRef = useRef(null);
+
+  useEffect(() => {
+    console.log(aboutRef.current);
+  }, []);
   return (
-    <div className='about'>
+    <div ref={aboutRef} className='about'>
         <h2 className='header2'>ABOUT ME</h2>
         <p className='paragraph1'>
-          Me llamo Federico Farias y soy estudiante de la Licenciatura en Sistemas de la Universidad Nacional de General Sarmiento.
+        I’m a system analyst, front-end developer apassionated for design, student of BS
+        in Information Systems at the Universidad
+        Nacional de General Sarmiento. My diverse
+        background has provided me skills such as
+        adaptability, emotional intelligence, an
+        unrelenting dedication and a unique perspective
+        that has allowed me to approach challenges
+        from different angles.
         </p>
     </div>
   );

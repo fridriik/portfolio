@@ -1,0 +1,35 @@
+.skills{
+    display: flex;
+    color: azure;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.skills-external-container, .skills-external-container-1{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.skills-divided{
+    display: flex;
+    color: azure;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4vh;
+    justify-content: space-between;
+    width: 100%;
+}
+
+@media (max-width: 714px), (max-height: 300px) {
+    .skills-divided {
+        justify-content: center;
+    }
+
+    .skills-external-container-1{
+        width: 100%;
+    }
+}
