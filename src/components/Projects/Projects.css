@@ -8,9 +8,24 @@
 }
 
 .project-external-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 1.8vw;
+    grid-row-gap: 1.8vw;
+    padding: 0vw 1.8vw;
+    width: auto;
+}
+
+.project-internal-container{
     display: flex;
     text-align: justify;
     flex-direction: column;
     align-items: center;
     gap: 2vh;
+}
+
+@media (max-width: 460px), (max-height: 300px) {
+    .project-external-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }

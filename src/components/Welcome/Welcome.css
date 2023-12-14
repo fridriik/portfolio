@@ -17,17 +17,18 @@
     gap: 5vh;
 }
 
-@media (max-width: 460px) {
-    .roles{
-        flex-direction: column;
-        justify-content: center;
-    }
-}
-
 @media (max-width: 700px) {
     .rol-1 {
+        order: 1;
+      }
+    
+      .rol-2 {
         width: 100%;
-    }
+        order: 0;
+      }
+      .rol-3 {
+        order: 2;
+      }
 }
 
 @media (max-height: 300px) {

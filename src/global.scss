@@ -13,6 +13,11 @@
     --font-size-7: 1.125rem; /*18px*/
     --font-size-8: 1rem; /*16px*/
     --font-size-9: 0.875rem; /*14px*/
+    --cursor-normal: default;
+}
+
+.header1, .header2, .header3, .header4, .header5, .paragraph1{
+    cursor: var(--cursor-normal);
 }
   
 .header1 {
@@ -42,6 +47,17 @@
         2vw + 0.75rem,
         var(--font-size-4)
     );
+}
+
+.header-link {
+    font-family: 'Tilt Warp', sans-serif;
+    margin: 0;
+    font-size: clamp(
+        var(--font-size-7),
+        2vw + 0.75rem,
+        var(--font-size-4)
+    );
+    cursor: pointer;
 }
 
 .header4 {

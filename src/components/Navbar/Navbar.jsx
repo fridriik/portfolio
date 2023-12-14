@@ -23,19 +23,19 @@ const Navbar = ({ welcomeRef, aboutRef, projectsRef, skillsRef, contactRef }) =>
       </button>
       <div className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
         <div onClick={() => scrollToSection(welcomeRef)}>
-          <h3 className="header3">F</h3>
+          <h3 className="header-link">F</h3>
         </div>
         <div onClick={() => scrollToSection(aboutRef)}>
-          <h3 className="header3">ABOUT ME</h3>
+          <h3 className="header-link">ABOUT ME</h3>
         </div>
         <div onClick={() => scrollToSection(projectsRef)}>
-          <h3 className="header3">PROJECTS</h3>
+          <h3 className="header-link">PROJECTS</h3>
         </div>
         <div onClick={() => scrollToSection(skillsRef)}>
-          <h3 className="header3">SKILLS</h3>
+          <h3 className="header-link">SKILLS</h3>
         </div>
         <div onClick={() => scrollToSection(contactRef)}>
-          <h3 className="header3">CONTACT</h3>
+          <h3 className="header-link">CONTACT</h3>
         </div>
       </div>
     </nav>
