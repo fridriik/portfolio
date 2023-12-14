@@ -15,7 +15,7 @@ const Contact = forwardRef((props, ref) => {
         <MapContainer
             center={[latitude, longitude]}
             zoom={11}
-            style={{ height: "400px", width: "100%" }}
+            style={{ height: "400px", width: "100%", border: "solid azure" }}
         >
             <TileLayer
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

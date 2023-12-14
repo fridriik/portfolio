@@ -5,6 +5,7 @@
     align-items: center;
     padding: 2.5rem;
     gap: 5vh;
+    text-align: center;
 }
 
 .project-external-container{
@@ -12,17 +13,31 @@
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 1.8vw;
     grid-row-gap: 1.8vw;
-    padding: 0vw 1.8vw;
+    justify-items: center;
     width: auto;
 }
 
-.project-internal-container{
-    display: flex;
-    text-align: justify;
-    flex-direction: column;
-    align-items: center;
-    gap: 2vh;
+.image-container {
+    aspect-ratio: 1 / 1; /* Establece la relación de aspecto deseada */
+    overflow: hidden;
+    position: relative;
+    border: solid azure;
+  }
+
+
+.image-container img{
+    display: block;
+    object-position: 50% 50%;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
+
+a{
+    display: block;
+    height: 100%;
+}
+  
 
 @media (max-width: 460px), (max-height: 300px) {
     .project-external-container{

@@ -15,18 +15,33 @@
 }
 
 .skills-divided{
-    display: flex;
     color: azure;
     align-items: center;
     flex-wrap: wrap;
     gap: 4vh;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    grid-template-columns: repeat(6, 1fr);
 }
 
-@media (max-width: 714px), (max-height: 300px) {
+@media (max-width: 714px) and (min-width: 460px), (max-height: 300px) {
     .skills-divided {
         justify-content: center;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .skills-external-container-1{
+        width: 100%;
+    }
+}
+
+@media (max-width: 460px), (max-height: 300px) {
+    .skills-divided {
+        justify-content: center;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .skills-external-container-1{

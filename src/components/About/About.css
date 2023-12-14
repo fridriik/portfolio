@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: center;
     text-align: justify;
+    text-align-last: center;
     align-items: center;
     color: azure;
     padding: 2.5rem;
