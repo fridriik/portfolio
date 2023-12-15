@@ -98,7 +98,7 @@ const Projects = forwardRef((props, ref) => {
             </div>*/}
             <div className="content">
             <a href="/" onClick={(e) => { e.preventDefault(); openModal(project); }}>
-                <img id={`image1_${index}`} src={project.image} alt="" />
+                <img id={`image1_${index}`} src={project.image} alt={`${project.projectName}`} />
               </a>
             </div>
           </div>
