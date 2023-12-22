@@ -12,7 +12,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 1.8vw;
-    grid-row-gap: 1.8vw;
+    grid-row-gap: 4vh;
     justify-items: center;
     width: auto;
 }
@@ -80,7 +80,7 @@ p{
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 2;
+  z-index: 3;
 }
 
 .modal-content {
@@ -88,7 +88,7 @@ p{
   padding: 20px;
   max-width: 400px; /* Ajusta según tus necesidades */
   text-align: center;
-  z-index: 3;
+  z-index: 4;
 }
 
 @media (max-width: 460px), (max-height: 300px) {

@@ -6,5 +6,28 @@
     align-items: center;
     color: azure;
     padding: 2.5rem;
+}
+
+.contact-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    align-items: center;
+    color: azure;
     gap: 4vh;
+    width: 85%;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 4vh;
+}
+
+a{
+    font-family: 'Tilt Warp', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
 }

@@ -5,6 +5,7 @@ import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Skills from "./components/Skills/Skills";
 import Contact from "./components/Contact/Contact";
+import AnimatedBackground from './components/AnimatedBackground/AnimatedBackground';
 import './global.scss';
 
 const App = () => {
@@ -30,6 +31,7 @@ const App = () => {
         <Skills ref={skillsRef} />
         <Contact ref={contactRef} />
       </div>
+      <AnimatedBackground />
     </main>
   );
 };

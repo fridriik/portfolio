@@ -35,7 +35,7 @@ const Navbar = ({ welcomeRef, aboutRef, projectsRef, skillsRef, contactRef }) =>
           <h3 className="header-link">SKILLS</h3>
         </div>
         <div onClick={() => scrollToSection(contactRef)}>
-          <h3 className="header-link">CONTACT</h3>
+          <h3 className="header-link">LINKS</h3>
         </div>
       </div>
     </nav>
