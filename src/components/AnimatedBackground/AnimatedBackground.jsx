@@ -27,8 +27,6 @@ const AnimatedBackground = () => {
       const height = getRandomInt(50, 1000);
       const position = getRandomInt(0, 100);
       const direction = getRandomInt(0, 1) === 0 ? -1 : 1;
-
-      // Limitar la posición en el eje x
       const xPosition = position < 50 ? position * 0.25 : (position - 50) * 0.25 + window.innerWidth - 25;
 
       lines.push(
