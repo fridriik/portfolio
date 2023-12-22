@@ -11,8 +11,8 @@
 .project-external-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 1.8vw;
-    grid-row-gap: 4vh;
+    grid-column-gap: 5vh;
+    grid-row-gap: 10vh;
     justify-items: center;
     width: auto;
 }
@@ -28,7 +28,7 @@
     overflow: hidden;
     position: relative;
     border: solid azure;
-    width: 50%;
+    width: 75%
   }
 
 
