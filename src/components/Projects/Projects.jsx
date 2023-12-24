@@ -74,10 +74,6 @@ const Projects = forwardRef((props, ref) => {
     setIsModalOpen(false);
   };
 
-  /*const toggleContent = (index) => {
-    setSelectedProjectIndex(selectedProjectIndex === index ? null : index);
-  };*/
-
   return (
     <div ref={ref} className="projects">
       <h2 className="header2">PROJECTS</h2>
@@ -85,17 +81,6 @@ const Projects = forwardRef((props, ref) => {
         {projectList.map((project, index) => (
           <div key={index} className="project-internal-container">
             <h3 className="header3">{project.projectName}</h3>
-            {/*<div className="content">
-              <a href="/" onClick={(e) => { e.preventDefault(); toggleContent(index); }}>
-                {selectedProjectIndex === index ? (
-                  <div className="description">
-                    <p className="paragraph1">{project.description}</p>
-                  </div>
-                ) : (
-                  <img id={`image1_${index}`} src={project.image} alt="" />
-                )}
-              </a>
-            </div>*/}
             <div className="content">
             <a href="/" onClick={(e) => { e.preventDefault(); openModal(project); }}>
                 <img id={`image1_${index}`} src={project.image} alt={`${project.projectName}`} />

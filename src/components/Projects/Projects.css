@@ -27,7 +27,7 @@
     aspect-ratio: 1 / 1;
     overflow: hidden;
     position: relative;
-    border: solid azure;
+    border: 1vw solid azure;
     width: 75%
   }
 

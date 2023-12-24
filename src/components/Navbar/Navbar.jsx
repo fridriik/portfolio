@@ -1,8 +1,20 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import './Navbar.css';
 
 const Navbar = ({ welcomeRef, aboutRef, projectsRef, skillsRef, contactRef }) => {
   const [isMenuOpen, setMenuOpen] = useState(false);
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  const handleScroll = () => {
+    setScrollPosition(window.scrollY);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
@@ -17,13 +29,13 @@ const Navbar = ({ welcomeRef, aboutRef, projectsRef, skillsRef, contactRef }) =>
   }; 
 
   return (
-    <nav className={`navbar ${isMenuOpen ? 'open' : ''}`}>
+    <nav className={`navbar ${scrollPosition >= 632 ? 'scrolled' : ''} ${isMenuOpen ? 'open' : ''}`}>
       <button className="menu-button" onClick={toggleMenu}>
         ☰
       </button>
       <div className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
         <div onClick={() => scrollToSection(welcomeRef)}>
-          <h3 className="header-link">F</h3>
+          <img src="/assets/img/ff3.png" alt="" className='logo'/>
         </div>
         <div onClick={() => scrollToSection(aboutRef)}>
           <h3 className="header-link">ABOUT ME</h3>

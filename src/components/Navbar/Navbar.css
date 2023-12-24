@@ -4,19 +4,33 @@
     color: azure;
     position: sticky;
     top: 0;
-    background-color: #303030;
     padding: 1rem;
     z-index: 1;
   }
+
+  .navbar.scrolled{
+      background-color: #18181875;
+      backdrop-filter: blur(10px);
+  }
   
   .menu-button {
-    display: none; /* Hide the menu button by default */
+    display: none;
   }
   
   .nav-links {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .logo{
+    display: flex;
+    width: clamp(1.125rem, 2vw + 0.75rem, 2.25rem);
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
   }
   
   @media (max-width: 460px), (max-height: 300px) {
@@ -28,7 +42,7 @@
     }
   
     .menu-button {
-      display: block; /* Show the menu button when the screen is small */
+      display: block;
       font-size: 1.5rem;
       background: none;
       border: none;
@@ -37,7 +51,7 @@
     }
   
     .nav-links {
-      display: none; /* Hide the navigation links by default */
+      display: none;
       flex-direction: column;
       gap: 4vh;
     }
