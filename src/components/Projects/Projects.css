@@ -92,7 +92,7 @@ p{
 
 .modal-content {
   background: var(--background-dark-color);
-  padding: 20px;
+  padding: 1.125rem;
   max-width: 400px;
   text-align: center;
   z-index: 4;
@@ -101,5 +101,9 @@ p{
 @media (max-width: 460px), (max-height: 300px) {
     .project-external-container{
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .modal-content {
+      width: 75vw;
     }
 }

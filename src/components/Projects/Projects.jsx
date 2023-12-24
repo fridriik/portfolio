@@ -2,7 +2,6 @@ import React, { forwardRef, useState } from "react";
 import './Projects.css';
 
 const Projects = forwardRef((props, ref) => {
-  //const [selectedProjectIndex, setSelectedProjectIndex] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
   

@@ -3,10 +3,14 @@ import './Navbar.css';
 
 const Navbar = ({ welcomeRef, aboutRef, projectsRef, skillsRef, contactRef }) => {
   const [isMenuOpen, setMenuOpen] = useState(false);
-  const [scrollPosition, setScrollPosition] = useState(0);
+  const [isScrolled, setScrolled] = useState(false);
 
   const handleScroll = () => {
-    setScrollPosition(window.scrollY);
+    const navbar = document.querySelector('.navbar');
+    if (navbar) {
+      const rect = navbar.getBoundingClientRect();
+      setScrolled(rect.top <= 0);
+    }
   };
 
   useEffect(() => {
@@ -21,7 +25,6 @@ const Navbar = ({ welcomeRef, aboutRef, projectsRef, skillsRef, contactRef }) =>
   };
 
   const scrollToSection = (ref) => {
-    console.log('Scrolling to section:', ref);
     if (ref.current) {
       ref.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
       setMenuOpen(false);
@@ -29,7 +32,7 @@ const Navbar = ({ welcomeRef, aboutRef, projectsRef, skillsRef, contactRef }) =>
   }; 
 
   return (
-    <nav className={`navbar ${scrollPosition >= 632 ? 'scrolled' : ''} ${isMenuOpen ? 'open' : ''}`}>
+    <nav className={`navbar ${isScrolled ? 'scrolled' : ''} ${isMenuOpen ? 'open' : ''}`}>
       <button className="menu-button" onClick={toggleMenu}>
         ☰
       </button>
