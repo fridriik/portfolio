@@ -14,7 +14,7 @@ const Contact = forwardRef((props, ref) => {
       <div className="contact-content">
         <div className="links">
           <a href="mailto:federicofarias@outlook.com" target="_blank" rel="noopener noreferrer" className="header-link">EMAIL</a>
-          <a href="https://linkedin.com/in/fridriik" target="_blank" rel="noopener noreferrer" className="header-link">LINKEDIN</a>
+          <a href="https://linkedin.com/in/federicoefarias" target="_blank" rel="noopener noreferrer" className="header-link">LINKEDIN</a>
           <a href="https://github.com/fridriik" target="_blank" rel="noopener noreferrer" className="header-link">GITHUB</a>
           <a href="https://behance.net/fridriik" target="_blank" rel="noopener noreferrer" className="header-link">BEHANCE</a>
         </div>
