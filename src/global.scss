@@ -4,7 +4,8 @@
     --border-color: #89ff98;
     --text-color-dark: #000000;
     --text-color-light: azure;
-    --font-size-1: 4.5rem; /*72px*/
+    --font-size-1: 16rem; /*72px*/
+    --font-size-1-1: 8rem; /*72px*/
     --font-size-2: 3.5rem; /*56px*/
     --font-size-3: 3rem; /*48px*/
     --font-size-4: 2.25rem; /*36px*/
@@ -64,9 +65,9 @@
     font-family: 'Tilt Warp', sans-serif;
     margin: 0;
     font-size: clamp(
-        var(--font-size-8),
+        var(--font-size-6),
         1.5vw + 0.5rem,
-        var(--font-size-5)
+        var(--font-size-1-1)
     );
 }
 
