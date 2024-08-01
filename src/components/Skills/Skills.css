@@ -27,7 +27,7 @@
     grid-template-columns: repeat(6, 1fr);
 }
 
-@media (max-width: 714px) and (min-width: 460px), (max-height: 300px) {
+@media (max-width: 800px) and (min-width: 460px), (max-height: 300px) {
     .skills-divided {
         justify-content: center;
         grid-template-columns: repeat(3, 1fr);

@@ -6,6 +6,7 @@
     align-items: center;
     color: azure;
     padding: 2.5rem;
+    gap: 2vh;
 }
 
 .contact-content{
@@ -20,14 +21,33 @@
 }
 
 .links{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     text-align: center;
-    gap: 4vh;
+    grid-column-gap: 5vh;
+    grid-row-gap: 1vh;
+
 }
 
 a{
     font-family: 'Tilt Warp', sans-serif;
-    font-weight: 700;
+    font-size: clamp(
+        var(--font-size-6),
+        3vw + 1rem,
+        var(--font-size-3)
+    );
+    font-weight: 900;
     cursor: pointer;
+}
+
+@media (max-width: 700px), (max-height: 450px) {
+    .links{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 450px), (max-height: 300px) {
+    .links{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }

@@ -10,15 +10,16 @@ const Contact = forwardRef((props, ref) => {
 
   return (
     <div ref={ref} className="contact">
-      <h2 className="header2">LINKS</h2>
+      <p className='paragraph1'>
+        ¡Si estás buscando alguien con enfoque creativo y una mentalidad analítica, encontrame por acá para darte una mano!
+        </p>
       <div className="contact-content">
         <div className="links">
-          <a href="mailto:federicofarias@outlook.com" target="_blank" rel="noopener noreferrer" className="header-link">EMAIL</a>
-          <a href="https://linkedin.com/in/federicoefarias" target="_blank" rel="noopener noreferrer" className="header-link">LINKEDIN</a>
-          <a href="https://github.com/fridriik" target="_blank" rel="noopener noreferrer" className="header-link">GITHUB</a>
-          <a href="https://behance.net/fridriik" target="_blank" rel="noopener noreferrer" className="header-link">BEHANCE</a>
+          <a href="mailto:federicofarias@outlook.com" target="_blank" rel="noopener noreferrer">EMAIL</a>
+          <a href="https://behance.net/fridriik" target="_blank" rel="noopener noreferrer">B&#274;HANCE</a>
+          <a href="https://linkedin.com/in/federicoefarias" target="_blank" rel="noopener noreferrer">LINKEDIN</a>
+          <a href="https://github.com/fridriik" target="_blank" rel="noopener noreferrer">GITHUB</a>
         </div>
-        <p className="paragraph1">You can find me around here</p>
           <MapContainer
               center={[latitude, longitude]}
               zoom={11}
@@ -29,6 +30,11 @@ const Contact = forwardRef((props, ref) => {
               />
           </MapContainer>
       </div>
+      <a href="https://www.instagram.com/fridriik_/" target="_blank" rel="noopener noreferrer">
+        <p className='paragraph1'>
+          Y si de casualidad te copa Nine Inch Nails, Queens Of The Stone Age, Hellsing, Dorohedoro, el asado, los tattoos y otras cosas más, acá estoy!
+        </p>
+      </a>
     </div>
     );
 });

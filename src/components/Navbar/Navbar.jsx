@@ -41,13 +41,13 @@ const Navbar = ({ welcomeRef, aboutRef, projectsRef, skillsRef, contactRef }) =>
           <img src="/assets/img/ff3.png" alt="" className='logo'/>
         </div>
         <div onClick={() => scrollToSection(aboutRef)}>
-          <h3 className="header-link">ABOUT ME</h3>
+          <h3 className="header-link">SOBRE MÍ</h3>
         </div>
         <div onClick={() => scrollToSection(projectsRef)}>
-          <h3 className="header-link">PROJECTS</h3>
+          <h3 className="header-link">PROYECTOS</h3>
         </div>
         <div onClick={() => scrollToSection(skillsRef)}>
-          <h3 className="header-link">SKILLS</h3>
+          <h3 className="header-link">HABILIDADES</h3>
         </div>
         <div onClick={() => scrollToSection(contactRef)}>
           <h3 className="header-link">LINKS</h3>

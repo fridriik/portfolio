@@ -5,25 +5,20 @@ const Projects = forwardRef((props, ref) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
   
+  const concordia = `
+  Diseño de app organizativa para pacientes oncológicos, ayudantes de los mismos y/o profesionales de la salud. 
+  Se hizo el research tanto cuantitativo como cualitativo, analizando los datos y volcarlos en prototipos en Figma, 
+  para luego hacer pruebas de usabilidad y definir la estructura final, tanto desde la parte visual como la de 
+  experiencia del usuario, incluyendo Atomic Design, patrones de diseño, guidelines y branding.
+`;
   const dimaiaDesc = `
-  A system that uses AI models to predict possible diseases, serving as 
-  an assistant for doctors when making diagnoses and making it easier 
-  for image diagnosis technicians to generate their reports. SAFe and 
-  Scrum were used as methodologies within the project and Jira for 
-  project management and issues tracking. Figma was employed for 
-  UX/UI design. GIMP and Illustrator were used to create the product's 
-  brand. UML was used to model user flow diagrams. Angular and 
-  TypeScript were employed for component development and 
-  consuming APIs REST.
+  Sistema que utiliza modelos de IA que predicen posibles enfermedades que sirva de asistente para médicos a la hora de 
+  realizar diagnósticos y que a técnicos en imágenes les sea más fácil realizar sus informes. 
+  Dentro del proyecto se utilizó SAFe y Scrum como metodologias y Jira para gestión de tareas y seguimiento de incidencias. 
+  Se utilizó Figma e Illustrator para UX/UI y crear la marca del producto. UML para modelar diagramas de flujo de usuarios. 
+  Se utilizó Angular y TypeScript para la creación de componentes y consumir APIs REST.
 `;
-  const vivianDesc = `
-  A JavaScript prototype for plant care, management, store promotion
-  and weather verification. HTML and CSS were used for the user
-  interfaces, and APIs REST consumption was employed for the creation
-  of weather widgets and forecasts. UML was used to model class
-  diagrams, use cases, architecture, and a Gantt chart for project
-  planning using ProjectLibre.
-`;
+  /*
   const styleBusDesc = `
   A JavaScript prototype simulating the purchase of tickets and travel
   packages in several cities from Argentina. HTML and CSS were
@@ -31,32 +26,32 @@ const Projects = forwardRef((props, ref) => {
   class, activity and sequence diagrams. Testing involved the utilization
   of equivalence class tables, decision tables, and finally Selenium for
   automated tests.
-`;
+`;*/
   const mentalDesc = `
-  This Data Science and Machine Learning project employs Python, Jupyter Notebook, 
-  Google Colab, and Streamlit. It revolves around exploring fundamental concepts 
-  like Artificial Intelligence, Machine Learning, and Deep Learning. The project's 
-  goal is to address mental health and suicide prevention using a dataset from the 
-  National University of Córdoba. Utilizing both supervised and unsupervised 
-  learning models, the project places a strong emphasis on interpreting results.
+  Este proyecto de Ciencia de Datos y Aprendizaje Automático emplea Python, Jupyter Notebook, Google Colab y Streamlit. 
+  Se centra en explorar conceptos fundamentales como la Inteligencia Artificial, el Aprendizaje Automático y el Aprendizaje Profundo. 
+  El objetivo del proyecto es abordar la salud mental y la prevención del suicidio utilizando un conjunto de datos de la 
+  Universidad Nacional de Córdoba. Utilizando modelos de aprendizaje supervisado y no supervisado, 
+  el proyecto pone un fuerte énfasis en la interpretación de los resultados.
 `;
 
   const projectList = [
+    {
+      projectName: "CONCORDIA",
+      image: `${process.env.PUBLIC_URL}/assets/img/concordia.webp`,
+      description: concordia,
+    },
     {
       projectName: "DIMAIA",
       image: `${process.env.PUBLIC_URL}/assets/img/dimaia.webp`,
       description: dimaiaDesc,
     },
-    {
-      projectName: "VIVIAN",
-      image: `${process.env.PUBLIC_URL}/assets/img/vivian.webp`,
-      description: vivianDesc,
-    },
+    /*
     {
       projectName: "STYLEBUS",
       image: `${process.env.PUBLIC_URL}/assets/img/stylebus.webp`,
       description: styleBusDesc,
-    },
+    },*/
     {
       projectName: "MENTAL",
       image: `${process.env.PUBLIC_URL}/assets/img/mental.webp`,
@@ -75,7 +70,7 @@ const Projects = forwardRef((props, ref) => {
 
   return (
     <div ref={ref} className="projects">
-      <h2 className="header2">PROJECTS</h2>
+      <h2 className="header2">PROYECTOS</h2>
       <div className="project-external-container">
         {projectList.map((project, index) => (
           <div key={index} className="project-internal-container">

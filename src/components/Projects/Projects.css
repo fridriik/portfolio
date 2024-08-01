@@ -4,15 +4,14 @@
     flex-direction: column;
     align-items: center;
     padding: 2.5rem;
-    gap: 5vh;
     text-align: center;
 }
 
 .project-external-container{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 5vh;
+    grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 10vh;
+    grid-column-gap: 5vh;
     justify-items: center;
     width: auto;
 }
@@ -21,6 +20,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    gap: 1vh;
 }
 
 .content {
@@ -64,7 +65,7 @@ p{
     text-align-last: center;
     align-items: center;
     color: azure;
-    padding: 0.5rem;
+    padding: 1rem;
 }
 
 .description{
@@ -98,7 +99,7 @@ p{
   z-index: 4;
 }
 
-@media (max-width: 460px), (max-height: 300px) {
+@media (max-width: 560px), (max-height: 300px) {
     .project-external-container{
         grid-template-columns: repeat(1, 1fr);
     }
