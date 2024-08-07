@@ -66,7 +66,7 @@ p{
     align-items: center;
     color: azure;
     padding: 1rem;
-}
+  }
 
 .description{
     display: flex;
@@ -79,6 +79,9 @@ p{
 }
 
 .modal-overlay {
+  p{
+    background-color: transparent;
+  }
   position: fixed;
   top: 0;
   left: 0;
@@ -92,11 +95,12 @@ p{
 }
 
 .modal-content {
-  background: var(--background-dark-color);
   padding: 1.125rem;
   max-width: 400px;
   text-align: center;
   z-index: 4;
+  backdrop-filter: blur(10px);
+  background-color: #18181875;
 }
 
 @media (max-width: 560px), (max-height: 300px) {
