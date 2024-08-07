@@ -26,7 +26,6 @@
     text-align: center;
     grid-column-gap: 5vh;
     grid-row-gap: 1vh;
-
 }
 
 a{
@@ -40,9 +39,32 @@ a{
     cursor: pointer;
 }
 
+ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    text-align: center;
+    padding: 0;
+    margin-bottom: 0;
+    align-items: center;
+}
+
+ul li:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 1020px), (max-height: 450px) {
+    ul{
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
 @media (max-width: 700px), (max-height: 450px) {
     .links{
         grid-template-columns: repeat(2, 1fr);
+    }
+    ul{
+        grid-template-columns: repeat(1, auto);
     }
 }
 

@@ -18,15 +18,6 @@ const Projects = forwardRef((props, ref) => {
   Se utilizó Figma e Illustrator para UX/UI y crear la marca del producto. UML para modelar diagramas de flujo de usuarios. 
   Se utilizó Angular y TypeScript para la creación de componentes y consumir APIs REST.
 `;
-  /*
-  const styleBusDesc = `
-  A JavaScript prototype simulating the purchase of tickets and travel
-  packages in several cities from Argentina. HTML and CSS were
-  employed for the user interfaces, while UML was used to model
-  class, activity and sequence diagrams. Testing involved the utilization
-  of equivalence class tables, decision tables, and finally Selenium for
-  automated tests.
-`;*/
   const mentalDesc = `
   Este proyecto de Ciencia de Datos y Aprendizaje Automático emplea Python, Jupyter Notebook, Google Colab y Streamlit. 
   Se centra en explorar conceptos fundamentales como la Inteligencia Artificial, el Aprendizaje Automático y el Aprendizaje Profundo. 
@@ -40,22 +31,19 @@ const Projects = forwardRef((props, ref) => {
       projectName: "CONCORDIA",
       image: `${process.env.PUBLIC_URL}/assets/img/concordia.webp`,
       description: concordia,
+      link: "https://www.behance.net/gallery/201735429/Concordia",
     },
     {
       projectName: "DIMAIA",
       image: `${process.env.PUBLIC_URL}/assets/img/dimaia.webp`,
       description: dimaiaDesc,
+      link: "https://dimaia.vercel.app/",
     },
-    /*
-    {
-      projectName: "STYLEBUS",
-      image: `${process.env.PUBLIC_URL}/assets/img/stylebus.webp`,
-      description: styleBusDesc,
-    },*/
     {
       projectName: "MENTAL",
       image: `${process.env.PUBLIC_URL}/assets/img/mental.webp`,
       description: mentalDesc,
+      link: "https://mental-health-kmeans.streamlit.app/",
     },
   ];
 
@@ -89,6 +77,7 @@ const Projects = forwardRef((props, ref) => {
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
             <h3 className="header3">{selectedProject.projectName}</h3>
             <p className="paragraph1">{selectedProject.description}</p>
+            <a className="header4" href={selectedProject.link} target="_blank" rel="noopener noreferrer">VER PROYECTO</a>
           </div>
         </div>
       )}

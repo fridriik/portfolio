@@ -101,6 +101,9 @@ p{
   z-index: 4;
   backdrop-filter: blur(10px);
   background-color: #18181875;
+  a{
+    cursor: pointer;
+  }
 }
 
 @media (max-width: 560px), (max-height: 300px) {
