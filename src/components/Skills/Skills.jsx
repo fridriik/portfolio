@@ -6,9 +6,15 @@ const Skills = forwardRef((props, ref) => {
     <div ref={ref} className="skills">
       <h2 className='header2'>HABILIDADES</h2>
         <div className='skills-divided'>
-          <h4 className="header4">FIGMA</h4> 
-          <h4 className="header4">ILLUSTRATOR</h4>
-          <h4 className="header4">TAILWIND</h4>
+          <h4 className="header4">FIGMA</h4>
+          <h4 className="header4">RESEARCH</h4>
+          <h4 className="header4">ATOMIC DESIGN</h4>
+          <h4 className="header4">DESIGN SYSTEMS</h4>
+          <h4 className="header4">DESIGN THINKING</h4>
+          <h4 className="header4">MOBILE FIRST</h4>
+          <h4 className="header4">RESPONSIVE DESIGN</h4>
+          <h4 className="header4">PROTOTYPING</h4>
+          <h4 className="header4">BRANDING</h4>
           <h4 className="header4">JAVASCRIPT</h4>
           <h4 className="header4">TYPESCRIPT</h4>
           <h4 className="header4">ANGULAR</h4>

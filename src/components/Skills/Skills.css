@@ -21,29 +21,19 @@
     gap: 4vh;
     justify-content: center;
     width: 100%;
-    display: grid;
+    display: flex;
     justify-items: center;
     align-content: center;
-    grid-template-columns: repeat(6, 1fr);
+    column-gap: 6vh;
 }
 
 @media (max-width: 800px) and (min-width: 460px), (max-height: 300px) {
-    .skills-divided {
-        justify-content: center;
-        grid-template-columns: repeat(3, 1fr);
-    }
-
     .skills-external-container-1{
         width: 100%;
     }
 }
 
 @media (max-width: 460px), (max-height: 300px) {
-    .skills-divided {
-        justify-content: center;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
     .skills-external-container-1{
         width: 100%;
     }
