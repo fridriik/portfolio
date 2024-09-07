@@ -11,10 +11,10 @@
 
 .about-external-container {
     padding: 2.5rem;
+    padding-bottom: 0;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-evenly;
     column-gap: 2vh;
-
 }
