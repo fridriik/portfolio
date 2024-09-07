@@ -43,17 +43,17 @@ const Skills = forwardRef((props, ref) => {
             <h4 className="header4">MOCKITO</h4>
             <h4 className="header4">JUNIT</h4>
             <h4 className="header4">API REST</h4>
-            <h4 className="header4">PYTHON</h4>
+            <h4 className="header4">POSTMAN</h4>
           </div>
           </div>
           <div>
             <div className="rol">
+              <h4 className="header4">PYTHON</h4>
               <h4 className="header4">SQL</h4>
               <h4 className="header4">MONGODB</h4>
               <h4 className="header4">GIT</h4>
               <h4 className="header4">JIRA</h4>
               <h4 className="header4">SCRUM</h4>
-              <h4 className="header4">UML</h4>
             </div>
           </div>
         </div>
