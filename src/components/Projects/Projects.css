@@ -96,7 +96,6 @@ p{
 
 .modal-content {
   padding: 1.125rem;
-  max-width: 400px;
   text-align: center;
   z-index: 4;
   backdrop-filter: blur(10px);

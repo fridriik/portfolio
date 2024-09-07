@@ -6,7 +6,7 @@ const WelcomeMessage = forwardRef((props, ref) => {
   const [index, setIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
 
-  const roles = ['DISEÑADOR UX - UI', 'DISEÑO DE PRODUCTO', 'DESARROLLADOR FULLSTACK'];
+  const roles = ['DISEÑADOR UX/UI', 'DESARROLLADOR FULL-STACK', 'ANÁLISIS FUNCIONAL'];
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -33,7 +33,7 @@ const WelcomeMessage = forwardRef((props, ref) => {
         <h1 className="header1 glitch is-glitching" data-text="FRIDRIIK">FRIDRIIK</h1>
       </div>
       <div className="roles">
-        <h4 className="header4 typing-demo">{text}</h4>
+        <h4 className="header4 typing-demo">_{text}_</h4>
       </div>
     </div>
   );

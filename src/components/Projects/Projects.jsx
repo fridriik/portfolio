@@ -74,7 +74,7 @@ const Projects = forwardRef((props, ref) => {
 
       {isModalOpen && selectedProject && (
         <div className="modal-overlay" onClick={closeModal}>
-          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+          <div className="modal-content" onClick={closeModal}>
             <h3 className="header3">{selectedProject.projectName}</h3>
             <p className="paragraph1">{selectedProject.description}</p>
             <a className="header4" href={selectedProject.link} target="_blank" rel="noopener noreferrer">VER PROYECTO</a>

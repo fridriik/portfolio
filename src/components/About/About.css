@@ -8,3 +8,13 @@
     color: azure;
     padding: 2.5rem;
 }
+
+.about-external-container {
+    padding: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+    column-gap: 2vh;
+
+}
