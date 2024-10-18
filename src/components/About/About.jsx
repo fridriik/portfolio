@@ -43,15 +43,15 @@ const About = forwardRef((props, ref) => {
 
   const rolList = [
     {
-      rolName: "DISEÑO UX/UI",
+      rolName: "DISEÑADOR",
       description: uxUiDescription,
     },
     {
-      rolName: "DESARROLLO FULL-STACK",
+      rolName: "DESARROLLADOR",
       description: fullStackDescription,
     },
     {
-      rolName: "ANÁLISIS FUNCIONAL",
+      rolName: "ANALISTA",
       description: analisisFuncionalDescription,
     },
   ];

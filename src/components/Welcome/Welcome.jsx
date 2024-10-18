@@ -6,7 +6,7 @@ const WelcomeMessage = forwardRef((props, ref) => {
   const [index, setIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
 
-  const roles = ['DISEÑADOR UX/UI', 'DESARROLLADOR FULL-STACK', 'ANÁLISIS FUNCIONAL'];
+  const roles = ['DISEÑADOR UX/UI', 'DESARROLLADOR FULLSTACK', 'ANALISTA FUNCIONAL'];
 
   useEffect(() => {
     const timer = setTimeout(() => {
